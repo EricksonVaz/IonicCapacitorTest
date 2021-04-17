@@ -1,0 +1,13 @@
+{
+  "appId": "cv.erickson.capionic",
+  "appName": "capacitorIonic",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
