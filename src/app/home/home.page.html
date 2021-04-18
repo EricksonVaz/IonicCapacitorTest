@@ -9,6 +9,7 @@
 <ion-content>
   <ion-button expand="full" (click)="takePicture(imageElement)">Take a Photo</ion-button>
   <ion-button expand="full" (click)="loadContacts()">Load Contacts</ion-button>
+  <ion-button expand="full" (click)="openSettings()">Open Settings</ion-button>
   <img #imageElement alt="">
   <ion-list *ngIf="contacts">
     <ion-item *ngFor="let contact of contacts">

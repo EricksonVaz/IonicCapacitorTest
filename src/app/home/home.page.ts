@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Plugins, CameraResultType } from '@capacitor/core';
 import { isPlatform } from '@ionic/core';
+import { OpenNativeSettings } from '@ionic-native/open-native-settings/ngx';
 
 const { Camera, Contacts } = Plugins;
 
@@ -13,7 +14,7 @@ export class HomePage {
 
   contacts = [];
 
-  constructor() {
+  constructor(private openNactiveSettings:OpenNativeSettings ) {
   }
 
   async loadContacts(){
@@ -42,5 +43,9 @@ export class HomePage {
     var imageUrl = image.webPath;
     // Can be set to the src of an image now
     imageElement.src = imageUrl;
+  }
+
+  openSettings(){
+    this.openNactiveSettings.open("settings");
   }
 }
