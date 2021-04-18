@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">capacitorIonic</string>
+    <string name="title_activity_main">capacitorIonic</string>
+    <string name="package_name">cv.erickson.capionic</string>
+    <string name="custom_url_scheme">cv.erickson.capionic</string>
+</resources>
